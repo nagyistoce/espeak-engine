@@ -2,7 +2,7 @@
 
 = Introduction =
 
-A few years ago I was looking for some Objective-C framework which would allow to speech text on iOS devices in our project. In that time i did not find any, but only tree plain speech synth libraries written i C - [http://espeak.sourceforge.net eSpeak], Flite and Festival.
+A few years ago I was looking for some Objective-C framework which would allow to speech text on iOS devices in our project. In that time i did not find any, but only tree plain speech synth libraries written i C - [http://espeak.sourceforge.net eSpeak], [http://www.speech.cs.cmu.edu/flite/ Flite] and [http://www.cstr.ed.ac.uk/projects/festival/ Festival].
 After couple days of research and attempts to integrate those libraries for iOS SDK I choosed eSpeak and Flite as candidates (I was able to successfully customize only eSpeak and Flite in reasonable time, they supports more languages, Google use eSpeek for its translation service…).
 
 In next couple of lines is described first speech synthesizer wrapper - ESpeakEngine.
