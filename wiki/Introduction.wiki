@@ -18,3 +18,23 @@ Usage of the ESpeakEngine is very easy, You have to only add a standard dependen
 Then import the ESpeakEngine header in class which is holding engine instance:
 
 `#import "ESpeakEngine.h"`
+
+In the init or the viewDidLoad method create a new instance of the ESpeakEngine and set all parameters you want (language, volume, gender… etc.):
+
+{{{
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    engine = [[ESpeakEngine alloc] init];
+    engine.volume = 1;
+    [engine setLanguage:@"en"];
+} 
+}}}
+
+And finally bind any button touch event to code which calls the ESpeakEngine a speak method:
+
+{{{
+- (IBAction)speech {
+    NSString * text = self.textView.text;
+    [engine speak:text];
+}
+}}}
