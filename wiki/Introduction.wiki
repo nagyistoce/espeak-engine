@@ -15,7 +15,11 @@ The _ESpeakEngine_ is Objectice-C static library project containing very light w
 In static library project also exists a test target which contains simple iPhone app. This sample app has only a one screen with the UITextView for text input and the UIButton to start speech syntesis of an entered text.
 
 = Usage ==
-Usage of the ESpeakEngine is very easy, You have to only add a standard dependency on the ESpeakEngine static library project to Your project and add path to folder _eSpeak_1.0/Classes_ in _Target Build Settings: Header Search Paths_
+Usage of the ESpeakEngine is very easy, You have to add:
+
+ * link the ESpeakEngine static library project (ESpeakEngine static  library project has to be located at same directory as a main project)
+ * add path to folder _eSpeak_1.0/Classes_ in _Target Build Settings: Header Search Paths_
+ * link ESpeakEngine data folder "espeak-data" in main project (drag it in Project Navigator pane from linked eSpeak.xcodeproj project & drop it to any location in a main project)
 
 Then import the _ESpeakEngine_ header in class which is holding engine instance:
 
