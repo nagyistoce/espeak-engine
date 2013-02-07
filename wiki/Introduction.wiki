@@ -17,10 +17,10 @@ In static library project also exists a test target which contains simple iPhone
 = Usage ==
 Usage of the ESpeakEngine is very easy, You have to add:
 
- * link the _ESpeakEngine_ static library project (ESpeakEngine static  library project has to be located at same directory as a main project)
+ * link the _ESpeakEngine_ static library project (_ESpeakEngine_ static  library project has to be located at same directory as a main project)
  * link the _AVFundation.Framework_
  * add path to folder _eSpeak_1.0/Classes_ in _Target Build Settings: Header Search Paths_
- * link ESpeakEngine data folder "espeak-data" in main project (drag it in Project Navigator pane from linked eSpeak.xcodeproj project & drop it to any location in a main project)
+ * link _ESpeakEngine_ data folder *espeak-data* in main project (drag it in Project Navigator pane from linked _eSpeak.xcodeproj_ project & drop it to any location in a main project)
 
 Then import the _ESpeakEngine_ header in class which is holding engine instance:
 
